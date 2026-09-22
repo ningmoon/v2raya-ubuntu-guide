@@ -1,0 +1,43 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+Copyright (c) ningmoon
+
+Except where otherwise noted, the original documentation in this repository is
+licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+License.
+
+You are free to:
+
+- Share — copy and redistribute the material in any medium or format.
+- Adapt — remix, transform, and build upon the material for any purpose.
+
+Under the following terms:
+
+- Attribution — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your
+  use.
+- ShareAlike — If you remix, transform, or build upon the material, you must
+  distribute your contributions under the same license as the original.
+- No additional restrictions — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the license permits.
+
+The full legal code is available at:
+https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Upstream and third-party material
+---------------------------------
+
+Parts of the historical installation documentation are derived from or adapted
+from the v2rayA documentation repository:
+https://github.com/v2rayA/v2raya.github.io
+
+That project's non-code documentation is also licensed under CC BY-SA 4.0
+unless otherwise noted. Attribution to v2rayA and notices identifying adapted
+material must be preserved.
+
+Third-party software, source code, trademarks, screenshots, linked content, and
+other material identified as belonging to upstream projects are not relicensed
+by this file. They remain subject to their respective owners' licenses and
+terms. No endorsement by v2rayA, V2Fly, XTLS, or other upstream projects is
+implied.

@@ -1,0 +1,53 @@
+name: Documentation improvement
+description: Report unclear, outdated, or missing documentation
+title: "[Docs]: "
+labels:
+  - documentation
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Documentation fixes are welcome. If proposing an installation command,
+        state whether and where you actually tested it. Never include subscription
+        URLs, passwords, UUIDs, tokens, node addresses, or other private data.
+  - type: textarea
+    id: location
+    attributes:
+      label: Documentation location
+      description: Link to the section or provide the file and heading.
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What is unclear, outdated, or missing?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+    validations:
+      required: true
+  - type: dropdown
+    id: tested
+    attributes:
+      label: Was the proposed procedure tested?
+      options:
+        - Not applicable; this is not a procedure change
+        - No; documentation proposal only
+        - Yes; details provided below
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Validation environment (if tested)
+      description: Include OS/version, architecture, v2rayA/core versions, install method, and test date.
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed all credentials, subscription data, tokens, and private endpoints.
+          required: true

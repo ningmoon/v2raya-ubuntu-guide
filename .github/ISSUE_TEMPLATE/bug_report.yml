@@ -1,0 +1,96 @@
+name: Bug report
+description: Report a reproducible installation, service, Web UI, or connectivity problem
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Remove subscription URLs, passwords,
+        UUIDs, tokens, node addresses, public IPs, and other private data from
+        logs and screenshots before submitting.
+  - type: input
+    id: os
+    attributes:
+      label: OS
+      placeholder: Ubuntu or Debian
+    validations:
+      required: true
+  - type: input
+    id: os_version
+    attributes:
+      label: Ubuntu/Debian version
+      placeholder: e.g. Ubuntu 24.04
+    validations:
+      required: true
+  - type: input
+    id: architecture
+    attributes:
+      label: Architecture
+      placeholder: e.g. amd64, arm64
+    validations:
+      required: true
+  - type: input
+    id: v2raya_version
+    attributes:
+      label: v2rayA version
+    validations:
+      required: true
+  - type: input
+    id: core
+    attributes:
+      label: Core
+      description: Include the core name and version if known.
+      placeholder: e.g. V2Ray core / Xray-core / bundled core
+    validations:
+      required: true
+  - type: input
+    id: installation_method
+    attributes:
+      label: Installation method
+      placeholder: APT repository, deb package, manual install, other
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the problem and the smallest reproducible sequence.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: systemctl
+    attributes:
+      label: systemctl status v2raya
+      description: Paste sanitized output. Do not include secrets or private endpoints.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: journalctl
+    attributes:
+      label: journalctl -u v2raya
+      description: Paste only relevant, sanitized lines around the error.
+      render: shell
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy check
+      options:
+        - label: I removed subscription URLs, passwords, UUIDs, tokens, node addresses, public IPs, and other private data.
+          required: true
